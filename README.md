@@ -1,4 +1,4 @@
-# PDP-IOD：Beyond Prompt Degradation: Prototype-guided Dual-pool Prompting for Incremental Object Detection
+#Beyond Prompt Degradation: Prototype-guided Dual-pool Prompting for Incremental Object Detection
 
 ![STAR-IOD Framework](overall.png)
 *Figure 1:Overview of our PDP framework at incremental step $t$. Given an image $x$, the query function generates a content-aware query representation by adaptively computing query weights via a ranking function $F_\psi$ and performing weighted aggregation. Subsequently, prompts are retrieved from both the shared and private pool and injected into the decoder layer. In parallel, the teacher model $\Phi_{t-1}$ generates a set of candidate bounding boxes, where potentially valuable ones are projected into the feature space to compute their similarity with class prototypes. This process yields a set of refined, high-quality pseudo-labels to guide the training of the student model $\Phi_t$.*
