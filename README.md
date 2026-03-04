@@ -1,16 +1,60 @@
-# Beyond Prompt Degradation: Prototype-guided Dual-pool Prompting for Incremental Object Detection
+# PDP_IOD
+## Beyond Prompt Degradation: Prototype-guided Dual-pool Prompting for Incremental Object Detection
 
-![STAR-IOD Framework](overall.png)
-*Figure 1:Overview of our PDP framework at incremental step $t$. Given an image $x$, the query function generates a content-aware query representation by adaptively computing query weights via a ranking function $F_\psi$ and performing weighted aggregation. Subsequently, prompts are retrieved from both the shared and private pool and injected into the decoder layer. In parallel, the teacher model $\Phi_{t-1}$ generates a set of candidate bounding boxes, where potentially valuable ones are projected into the feature space to compute their similarity with class prototypes. This process yields a set of refined, high-quality pseudo-labels to guide the training of the student model $\Phi_t$.*
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+  <img src="overall.png" width="90%">
+</p>
 
-This repository contains the official implementation of the paper:
+> Official implementation of **PDP**  
+> Prototype-guided Dual-pool Prompting for Incremental Object Detection
 
+---
 
-## Abstract
-Incremental Object Detection (IOD) aims to continuously learn new object categories without forgetting previously learned ones. Recently, prompt-based methods have gained popularity for their replay-free design and parameter efficiency. However, due to prompt coupling and prompt drift, these methods often suffer from prompt degradation during continual adaptation.
-To address these issues, we propose a novel prompt-decoupled framework called PDP. PDP innovatively designs a dual-pool prompt decoupling paradigm, which consists of a shared pool used to capture task-general knowledge for forward transfer, and a private pool used to learn task-specific discriminative features.
-This paradigm explicitly separates task-general and task-specific prompts, preventing interference between prompts and mitigating prompt coupling.
-In addition, to counteract prompt drift resulting from inconsistent supervision where old foreground objects are treated as background in subsequent tasks, PDP introduces a Prototypical Pseudo-Label Generation (PPG) module. PPG can dynamically update the class prototype space during training and use the class prototypes to further filter valuable pseudo-labels, maintaining supervisory signal consistency throughout the incremental process.
-PDP achieves state-of-the-art performance on MS-COCO (with a 9.2\% AP improvement) and PASCAL VOC (with a 3.3\% AP improvement) benchmarks, highlighting its potential in balancing stability and plasticity.
+## 🔥 Introduction
 
+Incremental Object Detection (IOD) aims to continuously learn new object categories without forgetting previously learned ones.
+
+Recent prompt-based IOD methods are replay-free and parameter-efficient. However, they suffer from two critical issues:
+
+- **Prompt Coupling**: Task-general and task-specific prompts interfere with each other.
+- **Prompt Drift**: Inconsistent supervision causes old categories to degrade.
+
+To address these challenges, we propose **PDP**, a prompt-decoupled continual detection framework that explicitly separates transferable and task-specific knowledge while maintaining supervision consistency across incremental steps.
+
+---
+
+## 🧠 Key Contributions
+
+### 1️⃣ Dual-Pool Prompt Decoupling
+- **Shared Prompt Pool**: captures task-general transferable knowledge
+- **Private Prompt Pool**: learns task-specific discriminative features
+- Explicit decoupling mitigates prompt interference
+
+### 2️⃣ Prototypical Pseudo-Label Generation (PPG)
+- Dynamically maintains class prototype space
+- Filters teacher-generated pseudo labels using prototype similarity
+- Ensures supervision consistency during incremental training
+
+---
+
+## 📊 Results
+
+| Dataset | Setting | Performance Gain |
+|----------|----------|----------------|
+| MS-COCO | 40+40 | +9.2% AP |
+| PASCAL VOC | 15+5 | +3.3% AP |
+
+PDP achieves state-of-the-art performance while remaining replay-free and parameter-efficient.
+
+---
+
+## 🏗️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourname/PDP_IOD.git
+cd PDP_IOD
+
+## Training
+bash run.sh
