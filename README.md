@@ -41,8 +41,8 @@ To address these challenges, we propose **PDP**, a prompt-decoupled continual de
 
 | Dataset | Setting | Performance Gain |
 |----------|----------|----------------|
-| MS-COCO | 40+40 | +9.2% AP |
-| PASCAL VOC | 15+5 | +3.3% AP |
+| MS-COCO | 21+19+20+20 | +9.2% AP |
+| PASCAL VOC | 19+1 | +3.3% AP |
 
 PDP achieves state-of-the-art performance while remaining replay-free and parameter-efficient.
 
