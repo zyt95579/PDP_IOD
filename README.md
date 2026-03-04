@@ -50,11 +50,10 @@ PDP achieves state-of-the-art performance while remaining replay-free and parame
 
 ## 🏗️ Installation
 
-### 1. Clone the repository
-
 ```bash
-git clone https://github.com/yourname/PDP_IOD.git
-cd PDP_IOD
 
-## Training
-bash run.sh
+git clone [https://github.com/yourname/PDP_IOD.git](https://github.com/yourname/PDP_IOD.git)
+cd PDP_IOD
+conda create -n pdp python=3.8 -y
+conda activate pdp
+pip install -r requirements.txt
