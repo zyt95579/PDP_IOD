@@ -5,8 +5,12 @@
   <img src="overall.png" width="90%">
 </p>
 
-> Official implementation of **PDP**  
-> Prototype-guided Dual-pool Prompting for Incremental Object Detection
+> 🎉 **Accepted by CVPR 2026** 🎉
+> 
+> Official implementation of **PDP** > Prototype-guided Dual-pool Prompting for Incremental Object Detection
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
 
 ---
 
