@@ -74,6 +74,11 @@ bash run.sh
 ## 📝 Citation
 If you find this repo useful, please cite:
 ```bash
-
+@article{zhang2026beyond,
+  title={Beyond Prompt Degradation: Prototype-guided Dual-pool Prompting for Incremental Object Detection},
+  author={Zhang, Yaoteng and Qing, Zhou and Gao, Junyu and Wang, Qi},
+  journal={arXiv preprint arXiv:2603.02286},
+  year={2026}
+}
 
 ```
