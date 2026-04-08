@@ -77,7 +77,7 @@ If you find this repo useful, please cite:
 @article{zhang2026beyond,
   title={Beyond Prompt Degradation: Prototype-guided Dual-pool Prompting for Incremental Object Detection},
   author={Zhang, Yaoteng and Qing, Zhou and Gao, Junyu and Wang, Qi},
-  journal={arXiv preprint arXiv:2603.02286},
+  journal={CVPR},
   year={2026}
 }
 
