@@ -5,7 +5,7 @@
   <img src="overall.png" width="90%">
 </p>
 
-> 🎉 **Accepted by CVPR 2026** 🎉
+> <h1 align="center">🎉 Accepted at CVPR 2026 🎉</h1>
 > 
 > Official implementation of **PDP** > Prototype-guided Dual-pool Prompting for Incremental Object Detection
 
