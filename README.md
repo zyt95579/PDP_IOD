@@ -1,12 +1,5 @@
-# PDP_IOD
 ## Beyond Prompt Degradation: Prototype-guided Dual-pool Prompting for Incremental Object Detection
-
-<p align="center">
-  <img src="overall.png" width="90%">
-</p>
-
 > <h1 align="center">🎉 Accepted at CVPR 2026 🎉</h1>
-> 
 > Official implementation of **PDP** > Prototype-guided Dual-pool Prompting for Incremental Object Detection
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -26,7 +19,9 @@ Recent prompt-based IOD methods are replay-free and parameter-efficient. However
 To address these challenges, we propose **PDP**, a prompt-decoupled continual detection framework that explicitly separates transferable and task-specific knowledge while maintaining supervision consistency across incremental steps.
 
 ---
-
+<p align="center">
+  <img src="overall.png" width="90%">
+</p>
 ## 🧠 Key Contributions
 
 ### 1️⃣ Dual-Pool Prompt Decoupling
