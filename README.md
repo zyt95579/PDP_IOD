@@ -1,6 +1,8 @@
 <h1 align="center">Beyond Prompt Degradation: Prototype-guided Dual-pool Prompting for Incremental Object Detection</h1>
 <h2 align="center">🎉 Accepted at CVPR 2026 🎉</h2>
-> Official implementation of **PDP** > Prototype-guided Dual-pool Prompting for Incremental Object Detection
+<p align="center">
+Official implementation of <b>PDP</b>: Prototype-guided Dual-pool Prompting for Incremental Object Detection
+</p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
