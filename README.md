@@ -22,6 +22,7 @@ To address these challenges, we propose **PDP**, a prompt-decoupled continual de
 <p align="center">
   <img src="overall.png" width="90%">
 </p>
+
 ## 🧠 Key Contributions
 
 ### 1️⃣ Dual-Pool Prompt Decoupling
