@@ -68,7 +68,14 @@ pip install -r requirements.txt
 
 bash run.sh
 ```
+###  🏋️ Testing
+To evaluate the trained model on the test set, first modify the run.sh script:
+Change the parameter train=1 to train=0
+Then run the same command:
+```bash
 
+bash run.sh
+```
 ## 📝 Citation
 If you find this repo useful, please cite:
 ```bash
