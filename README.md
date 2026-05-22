@@ -58,7 +58,7 @@ git clone https://github.com/zyt95579/PDP_IOD
 cd PDP_IOD
 conda create -n pdp python=3.8 -y
 conda activate pdp
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 
 ## 🚀 Usage
