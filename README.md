@@ -54,7 +54,7 @@ PDP achieves state-of-the-art performance while remaining replay-free and parame
 
 ```bash
 
-git clone [https://github.com/yourname/PDP_IOD.git](https://github.com/yourname/PDP_IOD.git)
+git clone https://github.com/zyt95579/PDP_IOD
 cd PDP_IOD
 conda create -n pdp python=3.8 -y
 conda activate pdp
