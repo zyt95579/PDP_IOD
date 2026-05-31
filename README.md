@@ -79,11 +79,11 @@ bash run.sh
 ## 📝 Citation
 If you find this repo useful, please cite:
 ```bash
-@article{zhang2026beyond,
+@inproceedings{zhang2026beyond,
   title={Beyond Prompt Degradation: Prototype-guided Dual-pool Prompting for Incremental Object Detection},
-  author={Zhang, Yaoteng and Qing, Zhou and Gao, Junyu and Wang, Qi},
-  journal={CVPR},
+  author={Zhang, Yaoteng and Zhou, Qing and Gao, Junyu and Wang, Qi},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={27568--27578},
   year={2026}
 }
-
 ```
